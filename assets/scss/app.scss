@@ -1,0 +1,18 @@
+// Import de la font Poppins depuis Google Font
+// A noter que les ";" ont été remplacés par "%3b" dans l'url afin d'éviter un bug de compilation Sass via Laravel Mix
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400%3b0,600%3b0,700%3b1,400%3b1,600%3b1,700&display=swap);
+
+// Surcharge de certaines variables Bootstrap (personnalisation)
+@import 'variables';
+
+// Fichier principal Bootstrap
+@import '../bootstrap/scss/bootstrap';
+
+// Style pour la page pricing, pour tout ce qui n'a pas pu être designé en Bootstrap pur
+@import 'header';
+
+@import 'main';
+
+@import 'footer';
+
+@import 'js';

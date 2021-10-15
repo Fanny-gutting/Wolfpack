@@ -1,0 +1,580 @@
+@include media-breakpoint-up(xs) {
+    body {
+        max-width: 36rem;
+    }
+    
+    .none_xs {
+        display: none;
+    }
+
+    .content {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0rem 4rem 0rem 3rem;
+        align-items: center;
+    }
+
+    .firstcarte {
+        margin-top: -2.5rem;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        width: 15rem;
+        margin-bottom: 1rem;
+    }
+
+    .carte {
+        background-color: black;
+        color: white;
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: flex-start;
+        width: 15rem;
+
+        &__box {
+            background-color: #DF0B0A;
+            height: 40px;
+            width: 40px;
+            margin-right: 0.7rem;
+
+
+            &__image {
+                height: 1rem;
+                padding: 1.1;
+                margin-left: 0.8rem;
+
+            }
+        }
+
+        &__sentence {
+            margin: 0;
+            font-size: 0.7rem;
+        }
+    }
+
+    .sous_titre {
+        margin: 0 auto;
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sousTitre {
+        max-width: 13rem;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .card-deck {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .firstCard {
+        border-color: black;
+        max-width: 95%;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .card {
+        max-width: 90%;
+        margin-top: 1rem;
+        min-width: 30%;
+        border-color: black;
+    }
+
+    .card-body {
+        background-color: #212529;
+        color: white;
+    }
+
+    .partenariat {
+        // background-color: rgb(230, 230, 230);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+    .img1 {
+        width: 8rem;
+        margin: 1rem 0.5rem 1rem 0rem;
+    }
+
+    .img2 {
+        height: 3rem;
+        margin: 1rem 0.5rem 1rem 0rem;
+    }
+
+    .date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .calendarNavML {
+        background-color: #DF0B0A;
+        color: white;
+        border: #DF0B0A;
+        padding: 0.3rem;
+    }
+
+
+    /*trait aside*/
+
+
+
+    /*Contact*/
+
+
+    .form {
+        max-width: 280px;
+        margin-left: 1.5rem;
+        margin-top: 0.9rem;
+
+
+        &__titre {
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+
+        &__input {
+            background-color: #EAEAEA;
+            border-radius: 10px;
+            border: #EAEAEA;
+            margin-bottom: 1rem;
+        }
+
+        &__button {
+            background-color: #DF0B0A;
+            color: white;
+            border: #DF0B0A;
+            padding: 0.3rem;
+        }
+
+        &__rgpd {
+            display: flex;
+            margin: 0.2rem;
+            font-size: 0.8rem;
+        }
+    }
+
+    form .formulaire {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .message {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .plan {
+        margin: 5rem 0rem 7rem 0rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .informations {
+        margin-top: 1.1rem;
+        font-size: 0.75rem;
+        padding: 1.5rem 1rem;
+        border-top: solid 2px red;
+
+        &__title {
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+
+        &__texte {
+            width: 220px;
+        }
+
+        &__phrase {
+            margin-top: 0;
+        }
+
+        &__contact {
+            background-color: #DBDBDB;
+            width: 240px;
+            padding: 0.2rem;
+
+            &__couleurs {
+                color: red;
+            }
+        }
+    }
+
+     /*Le club*/
+
+   .inscriptions{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-left:1rem;
+    text-align-last:center;
+
+    &__title{
+        font-weight:bold;
+    }
+
+    &__red{
+        color:red;
+    }
+
+    &__bold{
+        font-weight:bold;
+    }
+
+    &__button{
+        background-color: #DF0B0A;
+        color: white;
+        border: #DF0B0A;
+        padding: 0.3rem;
+    }
+
+    &__licence{
+        margin-left:-1.5rem;
+    }
+}
+
+    .equipes{
+        max-width:70%;
+        display:flex;
+        flex-direction:column;
+        margin:0 auto;
+
+        &__poutre_red{
+            border-left:red 2px solid;
+            padding-left: 0.5rem;
+        }
+
+        p{
+            font-size:0.8rem;
+            margin:0;
+        }
+
+        &__red{
+            color:red;
+        }
+
+        &__membres{
+            color: #8B8B8B;
+            margin-bottom:0.3rem !important;
+        }
+
+        &__title{
+            font-weight:bold;
+            font-size:1.05rem;
+            margin-top:0.5rem;
+            margin-bottom:0;
+        }
+        &__logo{
+           
+            &__img{
+                height:5rem;
+                padding-right:0.5rem;
+            }
+        }
+    }
+
+
+    .resultats{
+        &__sentence{
+            text-align:center;
+        }
+    }
+    .sous_titre_club{
+        margin-top: 5rem;
+    }
+    .partenariat__club{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    /*Médias*/
+
+    
+    .title_gallerie{
+        font-weight:bold;
+        color:black;
+        font-size:1.1rem;
+        margin-top: 2rem;
+        margin-left:1rem;
+    }
+
+    .title_album{
+        color:black;
+        font-weight:bold;
+        margin-top:1rem;
+        margin-left: 1rem;
+        font-size:1.5rem;
+    }
+
+    .legende_title{
+        color:grey;
+        font-size:0.8rem;
+        margin-left:1rem;
+    }
+
+    .title_nombre{
+        color:grey;
+        font-weight:bold;
+    }
+
+    .gallerie{
+        border-bottom: solid 2px red;
+        padding:1rem;
+       display: flex;
+       justify-content: flex-start;
+       flex-wrap: wrap;
+       
+
+        &__image{
+            height:6rem;
+            padding: 0.2rem;
+        }
+    }
+
+    .img1_partenaire{
+        width:8rem;
+    }
+
+    .img2_partenaire{ 
+        height:3rem;
+    }
+
+}
+
+@include media-breakpoint-up(sm) {
+    body {
+        min-width: 36rem;
+        max-width: 48rem;
+    }
+
+    .secondCarte {
+        margin-top: -2.5rem;
+    }
+
+    .firstCard {
+        max-width: 80%;
+    }
+
+    .informations {
+        border-left: solid 2px red;
+        border-top: none;
+        padding-left: 2.5rem;
+    }
+    // Medias
+
+    .ensemble{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    body {
+        min-width: 48rem;
+        max-width: 62rem;
+    }
+
+    .none_md {
+        display: none;
+    }
+
+    .none_xs {
+        display: inline;
+    }
+
+    .thirdCarte {
+        margin-top: -2.5rem;
+    }
+
+    .content {
+        max-width: 55rem;
+    }
+
+    .main_container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        margin-left: 4rem;
+    }
+
+    .firstCard {
+        max-width: 95%;
+    }
+
+    .news {
+        max-width: 65%;
+        margin-bottom: 7rem;
+    }
+
+    /*form*/
+
+    .form{
+        max-width:330px;
+    }
+
+    // Contact
+
+    .informations {
+        padding-left: 5rem;
+        font-size: 0.9rem;
+
+        &__texte {
+            width: 280px;
+        }
+        &__contact {
+            background-color: #DBDBDB;
+            width: 300px;
+            padding: 0.2rem;
+
+        }
+    }
+        // Medias 
+        .ensemble{
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+        
+        .gallerie{
+            &__image{
+                height:10rem;
+                padding: 0.2rem;
+            }
+        }
+
+
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+        min-width: 62rem;
+        max-width: 75rem;
+    }
+
+    .firstCard {
+        max-width: 70%;
+    }
+
+    .card {
+        max-width: 40%;
+    }
+    // Contact
+
+    .informations {
+        padding-left: 8rem;
+        border-left: solid 3px red;
+    }
+
+    /*club*/
+
+    .inscriptions{
+        max-width:50%;
+    }
+
+    .equipes{
+        max-width:70%;
+    }
+
+    .club_content{
+        display:flex;
+        margin: 0 auto;
+        justify-content: space-around;
+        max-width: 90%;
+    }
+    .resultats{
+        margin-top: 2.5rem;
+    }
+
+    //Médias
+
+    .title_gallerie{
+        font-size:1.3rem;
+       
+    }
+
+    .title_album{
+        font-size:1.7rem;
+    }
+
+    .legende_title{
+        font-size:1rem;
+    }
+
+    .title_nombre{
+        color:grey;
+        font-weight:bold;
+        font-size:1.3rem;
+    }
+
+    //partenariat
+    
+    .img1_partenaire{
+        width:9rem;
+    }
+
+    .img2_partenaire{ 
+        height:6rem;
+    }
+
+    
+
+}
+
+
+@include media-breakpoint-up(xl) {
+    body {
+        min-width: 75rem;
+        max-width: 150rem;
+    }
+    .informations {
+        padding-left: 13rem;
+    }
+    .conteneur{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    // Club
+
+    .inscriptions{
+        max-width:40%;
+    }
+    .equipes{
+        max-width:55%;
+    }
+
+    //Médias
+
+    .gallerie{
+        &__image{
+            height:15rem;
+            padding: 0.4rem;
+        }
+    }
+
+    
+}

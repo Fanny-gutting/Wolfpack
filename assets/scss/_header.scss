@@ -1,0 +1,251 @@
+body,
+html {
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "university";
+    src: url('../../assets/fonts/colleges.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Jersey";
+    src: url('../../assets/fonts/JerseyLetters.ttf') format('truetype');
+}
+
+
+
+@include media-breakpoint-up(xs) {
+    body {
+        min-width: 10rem;
+        max-width: 36rem;
+    }
+
+    h1 {
+        font-family: "university";
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-family: "Jersey";
+        font-size: 2.5rem;
+        color: rgb(255, 255, 255);
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .bandeau {
+
+
+        &__bande {
+            background: linear-gradient(45deg, #DF0B0A 40%, black 40%);
+            height: 1.8rem;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            &__reseaux_sociaux {
+                height: 1rem;
+                margin-right: 0.5rem;
+
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+
+
+        &__wolfpack {
+            display: flex;
+            margin: 0.5rem 0rem 0rem 0.5rem;
+
+            &__image {
+                height: 2rem;
+                width: 3.2rem;
+            }
+        }
+
+        .menu_burger {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu_burger i {
+            color: black;
+            font-size: 1.45rem;
+            margin: 0.7rem 0.8rem 0rem 0rem;
+        }
+
+        .menu_burger a {
+            padding: 0;
+        }
+    }
+
+    .bouton {
+        background-color: #DF0B0A;
+        color: white;
+        border: #DF0B0A;
+        padding: 0.3rem;
+    }
+
+    .header-content {
+        color: white;
+        background-size: cover;
+        padding: 2rem 2rem 5rem 2rem;
+        background-image: url("../../assets/images/football/img1_football_americain.jpg");
+
+    }
+
+    .header-contact {
+        background-image: url("../../assets/images/football/contact_football_americain.jpg");
+        padding: 2rem 2rem 5rem 2rem;
+    }
+
+    .header-club {
+        background-image: url("../../assets/images/football/club_football_americain.jpg");
+        padding: 2rem 2rem 5rem 2rem;
+    }
+
+    .header-content button {
+        margin-top: 3rem;
+    }
+
+    .header-medias {
+        background-image: url("../../assets/images/football/medias_football_americain.jpg");
+        padding: 2rem 2rem 5rem 2rem;
+    }
+
+}
+
+@include media-breakpoint-up(sm) {
+    body {
+        min-width: 36rem;
+        max-width: 48rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+        /*Contact*/
+    .header-contact {
+        padding: 3rem 2rem 10rem 2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    body {
+        min-width: 48rem;
+        max-width: 62rem;
+    }
+
+    .header-content {
+        padding: 4rem 0rem 7rem 4rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .none_xs {
+        text-decoration: none;
+        margin: 0.3rem;
+
+        &__title {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            padding-top: 0.5rem;
+            margin-left: 1rem;
+            font-size: 0.9rem;
+        }
+
+        &__title:hover {
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+
+        &__button {
+            padding-top: 0.5rem;
+            margin-left: 1rem;
+            font-size: 0.9rem;
+        }
+    }
+
+       /*Contact*/
+    .header-contact {
+        padding: 4rem 2rem 12rem 2rem;
+    }
+
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+        min-width: 62rem;
+        max-width: 75rem;
+    }
+
+    .none_xs {
+
+        &__title {
+            font-size: 1rem;
+        }
+
+        &__button {
+            font-size: 1rem;
+        }
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    .header-content {
+        padding: 6rem 0rem 10rem 8rem;
+    }
+
+        /*Contact*/
+    .header-contact {
+        padding: 4rem 2rem 15rem 5rem;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    body {
+        min-width: 75rem;
+        max-width: 150rem;
+    }
+
+    .none_xs {
+        margin: 0.3rem;
+
+        &__title {
+
+            padding-top: 0.5rem;
+            margin-left: 2rem;
+        }
+
+        &__button {
+            // padding-top:0.5rem;
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+
+        h2 {
+            font-size: 5.5rem;
+        }
+    }
+
+    .header-content {
+        padding: 8rem 0rem 25rem 8rem;
+    }
+        /*Contact*/
+    .header-contact {
+        padding: 10rem 2rem 20rem 5rem;
+    }
+}

@@ -1,0 +1,50 @@
+
+
+@include media-breakpoint-up(xs) {
+    body {
+        max-width: 36rem;
+    }
+
+    footer{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        background-color:black;
+        height:2rem;
+        color:white;
+        font-size: 0.7rem;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    body {
+        min-width: 36rem;
+        max-width: 48rem;
+    }
+    footer{
+        font-size: 0.8rem;
+        padding: 0rem 2rem 0rem 2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    body {
+        min-width: 48rem;
+        max-width: 62rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+        min-width: 62rem;
+        max-width: 75rem;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    body {
+        min-width: 75rem;
+        max-width: 150rem;
+    }
+}
